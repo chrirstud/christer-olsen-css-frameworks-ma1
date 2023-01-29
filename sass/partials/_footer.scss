@@ -1,0 +1,23 @@
+footer {
+  height: 44px;
+  width: 100vw;
+  background: $colour-secondary;
+}
+
+.footer {
+  &__container {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12pt;
+  }
+
+  &__item--left {
+    text-align: start;
+  }
+
+  &__item--right {
+    text-align: end;
+  }
+}

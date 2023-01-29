@@ -1,0 +1,36 @@
+.nav {
+  background-color: $colour-secondary;
+  height: 70px;
+
+  &__brand {
+    margin-left: 10%;
+    color: #262626;
+    font-weight: bolder;
+  }
+
+  &__container {
+    justify-content: flex-end;
+    font-family: "Archivo Narrow";
+  }
+
+  &__inner {
+    margin-right: 10%;
+  }
+
+  &__item {
+    margin-right: 1rem;
+  }
+
+  &__link {
+    color: $colour-content;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $colour-hover;
+  }
+
+  &__link--active {
+    color: $colour-primary;
+  }
+}
