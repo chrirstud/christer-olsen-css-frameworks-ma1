@@ -1,7 +1,12 @@
 footer {
-  height: 44px;
-  width: 100vw;
+  height: fit-content;
   background: $colour-secondary;
+  bottom: 0;
+
+  @media (max-width: 576px) {
+    background: white;
+    text-align: center;
+  }
 }
 
 .footer {
@@ -13,11 +18,15 @@ footer {
     font-size: 12pt;
   }
 
-  &__item--left {
-    text-align: start;
+  &__item {
+    padding: 15px;
   }
 
   &__item--right {
     text-align: end;
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 }
